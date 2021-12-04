@@ -6,8 +6,7 @@
 }
 
 header {
-  padding: 40px 0;
-  border: 2px solid;
+  padding: 50px 0;
 }
 
 header #header_nav {
@@ -44,11 +43,588 @@ header #header_nav #header_nav_links ul {
 header #header_nav #header_nav_links ul li {
   margin-left: 60px;
   list-style: none;
+  position: relative;
 }
 
 header #header_nav #header_nav_links ul li a {
   text-decoration: none;
   color: #1b1b1b;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+header #header_nav #header_nav_links ul li .home {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li .pages {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li .shop {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li .portfolio {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li .blog {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li .elements {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .home {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+}
+
+header #header_nav #header_nav_links ul li:hover .home ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+header #header_nav #header_nav_links ul li:hover .home ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .home ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .pages {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+}
+
+header #header_nav #header_nav_links ul li:hover .pages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+header #header_nav #header_nav_links ul li:hover .pages ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .pages ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -595px;
+}
+
+header #header_nav #header_nav_links ul li:hover .shop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 316px;
+  padding: 40px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header #header_nav #header_nav_links ul li:hover .shop ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .shop ul li h2 {
+  font: 25px serif;
+}
+
+header #header_nav #header_nav_links ul li:hover .shop ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li {
+  margin: 0;
+  margin-top: 10px;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio {
+  width: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio a i {
+  font-size: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio_layouts {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio_single {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li {
+  margin: 0;
+  margin-top: 10px;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog {
+  width: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog a i {
+  font-size: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog_post {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  left: -26px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+  padding-top: 60px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li {
+  margin: 0;
+  margin-top: 10px;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements {
+  width: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements a i {
+  font-size: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements_classic {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements_infographic {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements_interactive {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements_typography {
+  display: none;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_typography {
+  display: block;
+  width: 190px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_typography ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 25px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_typography ul li {
+  margin: 0;
+  margin-top: 10px;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_typography ul li a {
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
 }
 
 header #header_nav #header_nav_card ul {
@@ -61,7 +637,8 @@ header #header_nav #header_nav_card ul {
 header #header_nav #header_nav_card ul li {
   margin-left: 30px;
   list-style: none;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
 }
 
 header #header_nav #header_nav_card ul li i {
@@ -71,6 +648,7 @@ header #header_nav #header_nav_card ul li i {
 header #header_nav #header_nav_card ul .search {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  cursor: pointer;
 }
 
 header #header_nav #header_nav_card ul .search:hover {

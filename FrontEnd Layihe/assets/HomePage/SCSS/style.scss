@@ -5,8 +5,7 @@
 }
 
 header{
-    padding: 40px 0;
-    border: 2px solid;
+    padding: 50px 0;
 
     #header_nav{
         display: flex;
@@ -25,21 +24,500 @@ header{
                 li{
                     margin-left: 60px;
                     list-style: none;
-                    // position: relative;
-    
-                    // .home{
-                    //     ul{
-                    //         position: absolute;
-                    //     }
-                    // }
-
-                    // &:hover{
-                        
-                    // }
+                    position: relative;
 
                     a{
                         text-decoration: none;
                         color: #1b1b1b;
+                        font-family: Montserrat, sans-serif;
+                        font-size: 12px;
+                    }
+
+                    .home{
+                        display: none;
+                    }
+
+                    .pages{
+                        display: none;
+                    }
+
+                    .shop{
+                        display: none;
+                    }
+
+                    .portfolio{
+                        display: none;
+                        
+                    }
+
+                    .blog{
+                        display: none;
+                    }
+
+                    .elements{
+                        display: none;
+                    }
+
+                    &:hover{
+                        .home{
+                            display: block;
+                            width: 190px;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -26px;
+
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 25px;
+                                padding-top: 60px;
+
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .pages{
+                            display: block;
+                            width: 190px;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -26px;
+
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 25px;
+                                padding-top: 60px;
+
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .shop{
+                            display: flex;
+                            align-items: flex-start;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -595px;
+
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                width: 316px;
+                                padding: 40px;
+                                padding-top: 60px;
+                                box-sizing: border-box;
+
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+
+                                    h2{
+                                        font: 25px serif;
+                                    }
+
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .portfolio{
+                            display: block;
+                            width: 190px;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -26px;
+    
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 25px;
+                                padding-top: 60px;
+    
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+                                    position: relative;
+    
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+    
+                                    .sub_portfolio{
+                                        width: 150px;
+    
+                                        a{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+    
+                                            i{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+    
+                                    .sub_portfolio_layouts{
+                                        display: none;
+                                    }
+    
+                                    .sub_portfolio_single{
+                                        display: none;
+                                    }
+    
+                                    &:hover{
+                                        .sub_portfolio_layouts{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &:hover{
+                                        .sub_portfolio_single{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 150px;
+                
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .blog{
+                            display: block;
+                            width: 190px;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -26px;
+    
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 25px;
+                                padding-top: 60px;
+    
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+                                    position: relative;
+    
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+    
+                                    .sub_blog{
+                                        width: 150px;
+
+                                        a{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            i{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+    
+                                    .sub_blog_post{
+                                        display: none;
+                                    }
+    
+                                    &:hover{
+                                        .sub_blog_post{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover{
+                        .elements{
+                            display: block;
+                            width: 190px;
+                            background-color: white;
+                            position: absolute;
+                            top: 20px;
+                            left: -26px;
+        
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding: 25px;
+                                padding-top: 60px;
+        
+                                li{
+                                    margin: 0;
+                                    margin-top: 10px;
+                                    position: relative;
+        
+                                    a{
+                                        color: rgb(109, 106, 106);
+                                        font-family: Lora, sans-serif;
+                                        font-size: 15px;
+                                    }
+        
+                                    .sub_elements{
+                                        width: 150px;
+    
+                                        a{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+    
+                                            i{
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+        
+                                    .sub_elements_classic{
+                                        display: none;
+                                    }
+    
+                                    .sub_elements_infographic{
+                                        display: none;
+                                    }
+    
+                                    .sub_elements_interactive{
+                                        display: none;
+                                    }
+    
+                                    .sub_elements_typography{
+                                        display: none;
+                                    }
+        
+                                    &:hover{
+                                        .sub_elements_classic{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                    
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                    
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                    
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &:hover{
+                                        .sub_elements_infographic{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                    
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                    
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                    
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &:hover{
+                                        .sub_elements_interactive{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                    
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                    
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                    
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &:hover{
+                                        .sub_elements_typography{
+                                            display: block;
+                                            width: 190px;
+                                            background-color: white;
+                                            position: absolute;
+                                            top: -5px;
+                                            left: 150px;
+                    
+                                            ul{
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                padding: 25px;
+                    
+                                                li{
+                                                    margin: 0;
+                                                    margin-top: 10px;
+                    
+                                                    a{
+                                                        color: rgb(109, 106, 106);
+                                                        font-family: Lora, sans-serif;
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -54,7 +532,8 @@ header{
                 li{
                     margin-left: 30px;
                     list-style: none;
-                    font-size: 13px;
+                    font-size: 12px;
+                    font-family: Montserrat, sans-serif;
         
                     i{
                         font-size: 20px;
@@ -63,6 +542,7 @@ header{
         
                 .search{
                     transform: rotate(90deg);
+                    cursor: pointer;
         
                     &:hover{
                         color: rgb(239, 88, 88);
@@ -71,10 +551,4 @@ header{
             }
         }
     }
-
-    
-}
-
-#send_flowers{
-    
 }
