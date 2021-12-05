@@ -13,6 +13,12 @@ header #header_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header #header_nav #header_nav_links {
@@ -46,11 +52,38 @@ header #header_nav #header_nav_links ul li {
   position: relative;
 }
 
-header #header_nav #header_nav_links ul li a {
-  text-decoration: none;
+header #header_nav #header_nav_links ul li .link {
   color: #1b1b1b;
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
+  font-family: Montserrat;
+  font-size: sans-serif;
+  -webkit-text-decoration: 12px;
+          text-decoration: 12px;
+  text-decoration: none;
+  padding-bottom: 0;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li .link::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #header_nav #header_nav_links ul li .link:hover::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
 }
 
 header #header_nav #header_nav_links ul li .home {
@@ -106,10 +139,12 @@ header #header_nav #header_nav_links ul li:hover .home ul li {
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .home ul li a {
+header #header_nav #header_nav_links ul li:hover .home ul li .link {
   color: #6d6a6a;
-  font-family: Lora, sans-serif;
-  font-size: 15px;
+  font-family: Lora;
+  font-size: sans-serif;
+  -webkit-text-decoration: 15px;
+          text-decoration: 15px;
 }
 
 header #header_nav #header_nav_links ul li:hover .pages {
@@ -141,10 +176,12 @@ header #header_nav #header_nav_links ul li:hover .pages ul li {
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .pages ul li a {
+header #header_nav #header_nav_links ul li:hover .pages ul li .link {
   color: #6d6a6a;
-  font-family: Lora, sans-serif;
-  font-size: 15px;
+  font-family: Lora;
+  font-size: sans-serif;
+  -webkit-text-decoration: 15px;
+          text-decoration: 15px;
 }
 
 header #header_nav #header_nav_links ul li:hover .shop {
@@ -187,10 +224,12 @@ header #header_nav #header_nav_links ul li:hover .shop ul li h2 {
   font: 25px serif;
 }
 
-header #header_nav #header_nav_links ul li:hover .shop ul li a {
+header #header_nav #header_nav_links ul li:hover .shop ul li .link {
   color: #6d6a6a;
-  font-family: Lora, sans-serif;
-  font-size: 15px;
+  font-family: Lora;
+  font-size: sans-serif;
+  -webkit-text-decoration: 15px;
+          text-decoration: 15px;
 }
 
 header #header_nav #header_nav_links ul li:hover .portfolio {
@@ -223,17 +262,19 @@ header #header_nav #header_nav_links ul li:hover .portfolio ul li {
   position: relative;
 }
 
-header #header_nav #header_nav_links ul li:hover .portfolio ul li a {
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .link {
   color: #6d6a6a;
-  font-family: Lora, sans-serif;
-  font-size: 15px;
+  font-family: Lora;
+  font-size: sans-serif;
+  -webkit-text-decoration: 15px;
+          text-decoration: 15px;
 }
 
 header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio {
   width: 150px;
 }
 
-header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio a {
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio .sub_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,9 +284,44 @@ header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #6d6a6a;
+  font-family: Lora;
+  font-size: sans-serif;
+  -webkit-text-decoration: 15px;
+          text-decoration: 15px;
+  text-decoration: none;
 }
 
-header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio a i {
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio .sub_link span {
+  padding-bottom: 0;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio .sub_link span::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio .sub_link span:hover::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header #header_nav #header_nav_links ul li:hover .portfolio ul li .sub_portfolio .sub_link i {
   font-size: 10px;
 }
 
@@ -285,7 +361,7 @@ header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_por
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts ul li a {
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_layouts ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -319,7 +395,7 @@ header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_por
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single ul li a {
+header #header_nav #header_nav_links ul li:hover .portfolio ul li:hover .sub_portfolio_single ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -355,7 +431,7 @@ header #header_nav #header_nav_links ul li:hover .blog ul li {
   position: relative;
 }
 
-header #header_nav #header_nav_links ul li:hover .blog ul li a {
+header #header_nav #header_nav_links ul li:hover .blog ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -365,7 +441,7 @@ header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog {
   width: 150px;
 }
 
-header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog a {
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog .sub_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,9 +451,42 @@ header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
 }
 
-header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog a i {
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog .sub_link span {
+  padding-bottom: 0;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog .sub_link span::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog .sub_link span:hover::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header #header_nav #header_nav_links ul li:hover .blog ul li .sub_blog .sub_link i {
   font-size: 10px;
 }
 
@@ -413,7 +522,7 @@ header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_pos
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post ul li a {
+header #header_nav #header_nav_links ul li:hover .blog ul li:hover .sub_blog_post ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -449,7 +558,7 @@ header #header_nav #header_nav_links ul li:hover .elements ul li {
   position: relative;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li a {
+header #header_nav #header_nav_links ul li:hover .elements ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -459,7 +568,7 @@ header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements {
   width: 150px;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements a {
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements .sub_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,9 +578,42 @@ header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements a
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #6d6a6a;
+  font-family: Lora, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements a i {
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements .sub_link span {
+  padding-bottom: 0;
+  position: relative;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements .sub_link span::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements .sub_link span:hover::after {
+  display: block;
+  content: " ";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header #header_nav #header_nav_links ul li:hover .elements ul li .sub_elements .sub_link i {
   font-size: 10px;
 }
 
@@ -519,7 +661,7 @@ header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elem
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic ul li a {
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_classic ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -553,7 +695,7 @@ header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elem
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic ul li a {
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_infographic ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;
@@ -587,7 +729,7 @@ header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elem
   margin-top: 10px;
 }
 
-header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive ul li a {
+header #header_nav #header_nav_links ul li:hover .elements ul li:hover .sub_elements_interactive ul li .link {
   color: #6d6a6a;
   font-family: Lora, sans-serif;
   font-size: 15px;

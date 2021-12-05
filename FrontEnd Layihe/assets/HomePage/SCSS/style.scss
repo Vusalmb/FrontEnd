@@ -4,21 +4,19 @@
     box-sizing: border-box;
 }
 
+@import 'helpers/mixins';
+
 header{
     padding: 50px 0;
 
     #header_nav{
-        display: flex;
+        @include flex(flex, $justify: center, $align-items: center);
 
         #header_nav_links{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, $justify: center, $align-items: center);
         
             ul{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex(flex, $justify: center, $align-items: center);
                 margin: 0;
         
                 li{
@@ -26,11 +24,20 @@ header{
                     list-style: none;
                     position: relative;
 
-                    a{
-                        text-decoration: none;
-                        color: #1b1b1b;
-                        font-family: Montserrat, sans-serif;
-                        font-size: 12px;
+                    .link{
+                        @include link(#1b1b1b, Montserrat, sans-serif, 10px, none);
+                        padding-bottom: 0;
+                        position: relative;
+
+                        &::after{
+                            @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0, $transition: all 0.3s);
+                        }
+
+                        &:hover{
+                            &::after{
+                                @include hoverAfter(block, " ", 1px, 100%, black, absolute, $right: 0, $bottom: 0);
+                            }
+                        }
                     }
 
                     .home{
@@ -60,17 +67,10 @@ header{
 
                     &:hover{
                         .home{
-                            display: block;
-                            width: 190px;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -26px;
+                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 20px, $left: -26px);
 
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 padding: 25px;
                                 padding-top: 60px;
 
@@ -78,10 +78,8 @@ header{
                                     margin: 0;
                                     margin-top: 10px;
 
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
                                 }
                             }
@@ -90,17 +88,10 @@ header{
 
                     &:hover{
                         .pages{
-                            display: block;
-                            width: 190px;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -26px;
+                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 20px, $left: -26px);
 
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 padding: 25px;
                                 padding-top: 60px;
 
@@ -108,10 +99,8 @@ header{
                                     margin: 0;
                                     margin-top: 10px;
 
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
                                 }
                             }
@@ -120,17 +109,11 @@ header{
 
                     &:hover{
                         .shop{
-                            display: flex;
-                            align-items: flex-start;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -595px;
+                            @include flex(flex, $align-items: flex-start);
+                            @include hoverAfter($bg-color: white, $position: absolute, $top: 20px, $left: -595px);
 
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 width: 316px;
                                 padding: 40px;
                                 padding-top: 60px;
@@ -144,10 +127,8 @@ header{
                                         font: 25px serif;
                                     }
 
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
                                 }
                             }
@@ -156,17 +137,10 @@ header{
 
                     &:hover{
                         .portfolio{
-                            display: block;
-                            width: 190px;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -26px;
+                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 20px, $left: -26px);
     
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 padding: 25px;
                                 padding-top: 60px;
     
@@ -175,19 +149,31 @@ header{
                                     margin-top: 10px;
                                     position: relative;
     
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
     
                                     .sub_portfolio{
                                         width: 150px;
     
-                                        a{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
+                                        .sub_link{
+                                            @include flex(flex, $justify: space-between, $align-items: center);
+                                            @include link(rgb(109, 106, 106), Lora, sans-serif, 15px, none);
+                                            
+                                            span{
+                                                padding-bottom: 0;
+                                                position: relative;
+                            
+                                                &::after{
+                                                    @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0, $transition: all 0.3s);
+                                                }
+    
+                                                &:hover{
+                                                    &::after{
+                                                        @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0);
+                                                    }
+                                                }
+                                            }
     
                                             i{
                                                 font-size: 10px;
@@ -205,27 +191,18 @@ header{
     
                                     &:hover{
                                         .sub_portfolio_layouts{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                 
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                 
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                 
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -234,27 +211,18 @@ header{
     
                                     &:hover{
                                         .sub_portfolio_single{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 0, $left: 150px);
                 
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                 
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                 
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -267,17 +235,10 @@ header{
 
                     &:hover{
                         .blog{
-                            display: block;
-                            width: 190px;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -26px;
+                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 20px, $left: -26px);
     
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 padding: 25px;
                                 padding-top: 60px;
     
@@ -286,19 +247,31 @@ header{
                                     margin-top: 10px;
                                     position: relative;
     
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
     
                                     .sub_blog{
                                         width: 150px;
 
-                                        a{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
+                                        .sub_link{
+                                            @include flex(flex, $justify: space-between, $align-items: center);
+                                            @include link(rgb(109, 106, 106), Lora, sans-serif, 15px, none);
+
+                                            span{
+                                                padding-bottom: 0;
+                                                position: relative;
+                            
+                                                &::after{
+                                                    @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0, $transition: all 0.3s);
+                                                }
+    
+                                                &:hover{
+                                                    &::after{
+                                                        @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0);
+                                                    }
+                                                }
+                                            }
 
                                             i{
                                                 font-size: 10px;
@@ -312,27 +285,18 @@ header{
     
                                     &:hover{
                                         .sub_blog_post{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                 
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                 
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                 
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -345,17 +309,10 @@ header{
 
                     &:hover{
                         .elements{
-                            display: block;
-                            width: 190px;
-                            background-color: white;
-                            position: absolute;
-                            top: 20px;
-                            left: -26px;
+                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: 20px, $left: -26px);
         
                             ul{
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
+                                @include flex(flex, column, $align-items: flex-start);
                                 padding: 25px;
                                 padding-top: 60px;
         
@@ -364,19 +321,31 @@ header{
                                     margin-top: 10px;
                                     position: relative;
         
-                                    a{
-                                        color: rgb(109, 106, 106);
-                                        font-family: Lora, sans-serif;
-                                        font-size: 15px;
+                                    .link{
+                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                     }
         
                                     .sub_elements{
                                         width: 150px;
     
-                                        a{
-                                            display: flex;
-                                            justify-content: space-between;
-                                            align-items: center;
+                                        .sub_link{
+                                            @include flex(flex, $justify: space-between, $align-items: center);
+                                            @include link(rgb(109, 106, 106), Lora, sans-serif, 15px, none);
+
+                                            span{
+                                                padding-bottom: 0;
+                                                position: relative;
+                            
+                                                &::after{
+                                                    @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0, $transition: all 0.3s);
+                                                }
+    
+                                                &:hover{
+                                                    &::after{
+                                                        @include hoverAfter(block, " ", 1px, 0, black, absolute, 0, $bottom: 0);
+                                                    }
+                                                }
+                                            }
     
                                             i{
                                                 font-size: 10px;
@@ -402,27 +371,18 @@ header{
         
                                     &:hover{
                                         .sub_elements_classic{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                     
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                     
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                     
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -431,27 +391,18 @@ header{
     
                                     &:hover{
                                         .sub_elements_infographic{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                     
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                     
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                     
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -460,27 +411,18 @@ header{
     
                                     &:hover{
                                         .sub_elements_interactive{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                     
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                     
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                     
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -489,27 +431,18 @@ header{
     
                                     &:hover{
                                         .sub_elements_typography{
-                                            display: block;
-                                            width: 190px;
-                                            background-color: white;
-                                            position: absolute;
-                                            top: -5px;
-                                            left: 150px;
+                                            @include hoverAfter(block, $width: 190px, $bg-color: white, $position: absolute, $top: -5px, $left: 150px);
                     
                                             ul{
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
+                                                @include flex(flex, column, $align-items: flex-start);
                                                 padding: 25px;
                     
                                                 li{
                                                     margin: 0;
                                                     margin-top: 10px;
                     
-                                                    a{
-                                                        color: rgb(109, 106, 106);
-                                                        font-family: Lora, sans-serif;
-                                                        font-size: 15px;
+                                                    .link{
+                                                        @include link(rgb(109, 106, 106), Lora, sans-serif, 15px);
                                                     }
                                                 }
                                             }
@@ -526,14 +459,12 @@ header{
         #header_nav_card{
             
             ul{
-                display: flex;
+                @include flex(flex);
                 margin: 0;
                 
                 li{
                     margin-left: 30px;
-                    list-style: none;
-                    font-size: 12px;
-                    font-family: Montserrat, sans-serif;
+                    @include text(Montserrat, sans-serif, 12px, none);
         
                     i{
                         font-size: 20px;

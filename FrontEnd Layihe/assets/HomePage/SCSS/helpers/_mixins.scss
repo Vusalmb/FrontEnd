@@ -1,0 +1,40 @@
+@mixin flex($flex: null, $direction: null, $wrap: null, $justify: null, $align-items: null, $align-content: null) {
+    display: $flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align-items;
+    align-content: $align-content;
+}
+
+@mixin hoverAfter ($block: null, $content: null, $height: null, $width: null, $bg-color: null, $position: null, $left: null, $right: null, $top: null, $bottom: null, $transition: null) {
+    display: $block;
+    content: $content;
+    height: $height;
+    width: $width;
+    background-color: $bg-color;
+    position: $position;
+    left: $left;
+    right: $right;
+    top: $top;
+    bottom: $bottom;
+    transition: $transition;
+}
+
+@mixin display($display: null) {
+    display: $display;
+}
+
+@mixin link($t-color: null, $f-family: null, $f-size: null, $t-decoration: null) {
+    color: $t-color;
+    font-family: $f-family;
+    font-size: $f-size;
+    text-decoration: $t-decoration;
+}
+
+@mixin text($f-family: null, $f-size: null, $list-style: null, $t-color: null) {
+    font-family: $f-family;
+    font-size: $f-size;
+    list-style: $list-style;
+    color: $t-color;
+}
