@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiorello – A Flower Shop and Florist WooCommerce Theme</title>
+    <title>Fiorello - Shop</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div id="backToTop">
@@ -27,7 +27,7 @@
                             <ul>
                                 <li>
                                     <div>
-                                        <a class="active" href="">HOME</a>
+                                        <a class="link" href="../HomePage/home.html" target="_blank">HOME</a>
                                     </div>
                                     <div class="home">
                                         <ul>
@@ -56,7 +56,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <a class="link" href="../ShopPage/shop.html" target="_blank">SHOP</a>
+                                        <a class="active" href="">SHOP</a>
                                     </div>
                                     
                                     <div class="shop">
@@ -279,8 +279,6 @@
                                 </li>
                             </ul>
                         </div>
-
-                        
                     </nav>
                 </div>
             </div>
@@ -288,87 +286,17 @@
     </header>
 
     <main>
-        <section id="slide_image">
-            <div class="slide_flowers">
-                <div class="images">
-                    <img class="flower active_image" src="../IMG/h3-slider-background.jpg" alt="slide_flower" width="100%">
-                    <img class="flower" src="../IMG/h3-slider-background-2.jpg" alt="slide_flower" width="100%">
-                    <img class="flower" src="../IMG/h3-slider-background-3.jpg" alt="slide_flower" width="100%">
-                </div>
-                
-                <div class="slide_flowers_left">
-                    <span class="previous">
-                        <i class="fas fa-long-arrow-alt-left"></i>
-                    </span>
-                </div>
-
-                <div class="info_flowers">
-                    <div class="info_flowers_title">
-                        <h2>Send <span>flowers</span> like you mean it</h2>
-                    </div>
-                    <div class="info_flowers_desc">
-                        <p>
-                            Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris. 
-                        </p>
-                    </div>
-                    <div class="info_flowers_sign">
-                        <img src="../IMG/h2-sign-img.png" alt="sign_image">
-                    </div>
-                </div>
-                
-                <div class="slide_flowers_right">
-                    <span class="next">
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </span>
+        <section id="shop">
+            <div class="shop_container">
+                <div class="shop_title">
+                    <h1>Shop List</h1>
                 </div>
             </div>
         </section>
-        <section id="sale_flower">
-            <div class="list_category_group">
-                <div class="list_category">
-                    <ul>
-                        <li class="list active_list" data-filter="all">All</li>
-                        <li class="list" data-filter="popular">Popular</li>
-                        <li class="list" data-filter="winter">Winter</li>
-                        <li class="list" data-filter="various">Various</li>
-                        <li class="list" data-filter="exotic">Exotic</li>
-                        <li class="list" data-filter="greens">Greens</li>
-                        <li class="list" data-filter="cactuses">Cactuses</li>
-                    </ul>
-                </div>
-                
-                <div class="filter">
-                    <div class="hover">
-                        <span class="text_filter">Filter</span>
-                        <span class="sort_down">
-                            <i class="fas fa-sort-down"></i>
-                        </span>
-                        <div class="hover_filter">
-                            <ul>
-                                <li><h2>Sort By</h2></li>
-                                <li><a class="link" href="">Deafult</a></li>
-                                <li><a class="link" href="">Popularity</a></li>
-                                <li><a class="link" href="">Newness</a></li>
-                                <li><a class="link" href="">Price: Low To High</a></li>
-                                <li><a class="link" href="">Price: Hige To Low</a></li>
-                            </ul>
-                            <ul>
-                                <li><h2>Price Range</h2></li>
-                                <li><a class="link" href="">All</a></li>
-                                <li><a class="link" href="">$0-$10</a></li>
-                                <li><a class="link" href="">$10-$20</a></li>
-                                <li><a class="link" href="">$20-$30</a></li>
-                                <li><a class="link" href="">$30-$40</a></li>
-                                <li><a class="link" href="">40$+</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
 
-            <div class="sale_images">
-                <div class="image_box popular winter cactuses">
+        <section id="sale_flower">
+            <div class="sale_images pt-5">
+                <div class="image_box">
                     <div class="box">
                         <figure>
                             <img src="../IMG/shop-14-img.jpg" alt="" width="300" height="380">
@@ -380,7 +308,7 @@
                         <p class="text-center add">Add to cart</p>
                     </div>
                 </div>
-                <div class="image_box popular winter">
+                <div class="image_box">
                     <div class="box">
                         <figure>
                             <img src="../IMG/shop-13-img.jpg" alt="" width="300" height="380">
@@ -392,7 +320,7 @@
                         <p class="text-center add">Add to cart</p>
                     </div>
                 </div>
-                <div class="image_box popular winter">
+                <div class="image_box popular">
                     <div class="box">
                         <figure>
                             <img src="../IMG/shop-10-img.jpg" alt="" width="300" height="380">
@@ -405,7 +333,7 @@
                         <p class="text-center add">Add to cart</p>
                     </div>
                 </div>
-                <div class="image_box popular">
+                <div class="image_box">
                     <div class="box">
                         <figure>
                             <img src="../IMG/shop-11-img.jpg" alt="" width="300" height="380">
@@ -416,267 +344,6 @@
                         <p class="text-center">$170</p>
                         <p class="text-center add">Add to cart</p>
                     </div>
-                </div>
-                <div class="image_box popular">
-                    <div class="box">
-                        <figure>
-                            <img src="../IMG/shop-12-img.jpg" alt="" width="300" height="380">
-                        </figure>
-                        <span class="sale">Sale</span>
-                    </div>
-                    <div class="box">
-                        <p class="text-center">Scarlet Sage</p>
-                        <p class="text-center">$259 $159</p>
-                        <p class="text-center add">Add to cart</p>
-                    </div>
-                </div>
-                <div class="image_box cactuses">
-                    <div class="box">
-                        <figure>
-                            <img src="../IMG/shop-9-img.jpg" alt="" width="300" height="380">
-                        </figure>
-                    </div>
-                    <div class="box">
-                        <p class="text-center" class="text-center">Rock Soapwort</p>
-                        <p class="text-center" class="text-center">$259</p>
-                        <p class="text-center add">Add to cart</p>
-                    </div>
-                </div>
-                <div class="image_box greens">
-                    <div class="box">
-                        <figure>
-                            <img src="../IMG/shop-8-img.jpg" alt="" width="300" height="380">
-                        </figure>
-                    </div>
-                    <div class="box">
-                        <p class="text-center">Summer Savory</p>
-                        <p class="text-center">$259</p>
-                        <p class="text-center add">Add to cart</p>
-                    </div>
-                </div>
-                <div class="image_box exotic">
-                    <div class="box">
-                        <figure>
-                            <img src="../IMG/shop-7-img.jpg" alt="" width="300" height="380">
-                        </figure>
-                    </div>
-                    <div class="box">
-                        <p class="text-center">Wild Roses</p>
-                        <p class="text-center">$259</p>
-                        <p class="text-center add">Add to cart</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="suprise">
-            <div class="suprise_container">
-                <div class="suprise_image">
-                    <a href="https://www.youtube.com/watch?time_continue=1&v=K-0cjGCNYfs&_ga=2.90994586.1294056187.1638513915-408661439.1638513915" target="_blank">
-                        <img src="../IMG/h3-video-img.jpg" alt="video_suprise_valentine" width="600">
-                    </a>
-                </div>
-                <div class="suprise_video">
-                    <a href="https://www.youtube.com/watch?time_continue=1&v=K-0cjGCNYfs&_ga=2.90994586.1294056187.1638513915-408661439.1638513915" target="_blank">
-                        <i class="far fa-play-circle"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="video_desc">
-                <div class="video_title">
-                    <h2>Suprise Your <span>Valentine!</span> Let us arrange a smile.</h2>
-                </div>
-                <div class="video_title_desc">
-                    <p>
-                        Where flowers are our inspiration to create lasting memories. Whatever the occasion... 
-                    </p>
-                </div>
-                <div class="video_title_list">
-                    <ul>
-                        <li>Hand picked just for you</li>
-                        <li>Unique flower arrangements</li>
-                        <li>Best way to say you care.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="flower_experts">
-            <div class="flower_experts_container">
-                <div class="flower_experts_desc">
-                    <div class="flower_experts_text_title">
-                        <h2>Flower Experts</h2>
-                    </div>
-                    <div class="flower_experts_text_desc">
-                        <p>
-                            A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you. 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="experts">
-                    <div class="expert1">
-                        <div class="expert1_image">
-                            <img src="../IMG/h3-team-img-1.png" alt="">
-                        </div>
-                        <div class="expert1_name">
-                            <span>Crystal Brooks</span>
-                        </div>
-                        <div class="expert1_profession">
-                            <span>Florist</span>
-                        </div>
-                    </div>
-                    <div class="expert2">
-                        <div class="expert2_image">
-                            <img src="../IMG/h3-team-img-2.png" alt="">
-                        </div>
-                        <div class="expert2_name">
-                            <span>Shirley Harris</span>
-                        </div>
-                        <div class="expert2_profession">
-                            <span>Manager</span>
-                        </div>
-                    </div>
-                    <div class="expert3">
-                        <div class="expert3_image">
-                            <img src="../IMG/h3-team-img-3.png" alt="">
-                        </div>
-                        <div class="expert3_name">
-                            <span>Beverly Clark</span>
-                        </div>
-                        <div class="expert3_profession">
-                            <span>Florist</span>
-                        </div>
-                    </div>
-                    <div class="expert4">
-                        <div class="expert4_image">
-                            <img src="../IMG/h3-team-img-4.png" alt="">
-                        </div>
-                        <div class="expert4_name">
-                            <span>Amanda Watkins</span>
-                        </div>
-                        <div class="expert4_profession">
-                            <span>Florist</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="join">
-            <div class="join_container">
-                <div class="join_title">
-                    <h2>Join The Colorful Bunch!</h2>
-                </div>
-                <div class="join_subscribe">
-                    <form action="" method="post">
-                        <div class="form_subscribe">
-                            <div class="email_subsribe">
-                                <input type="email" placeholder="Email Address">
-                            </div>
-                            <div class="submit_subsribe">
-                                <input type="submit" value="Subscribe">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section id="blog_form">
-            <div class="blog_form_container">
-                <div class="blog_form_desc">
-                    <div class="blog_form_text_title">
-                        <h2>Form our blog</h2>
-                    </div>
-                    <div class="blog_form_text_desc">
-                        <p>
-                            Flower Experts A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.
-                        </p>
-                    </div>
-                </div>
-                <div class="blog_form_info">
-                    <div class="info_box1">
-                        <div class="info_box1_image">
-                            <img src="../IMG/unnamed (1).jpg" alt="flower_power" width="400">
-                            <span>03.08.2018</span>
-                        </div>
-                        <div class="info_box1_title">
-                            <h6>Flower Power</h6>
-                        </div>
-                        <div class="info_box1_desc">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info_box2">
-                        <div class="info_box2_image">
-                            <img src="../IMG/unnamed (2).jpg" alt="local_florists" width="400">
-                            <span>03.08.2018</span>
-                        </div>
-                        <div class="info_box2_title">
-                            <h6>Local florists</h6>
-                        </div>
-                        <div class="info_box2_desc">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                            </p>
-                        </div>
-                    </div>
-                    <div class="info_box3">
-                        <div class="info_box3_image">
-                            <img src="../IMG/unnamed (3).jpg" alt="flower_beauty" width="400">
-                            <span>03.08.2018</span>
-                        </div>
-                        <div class="info_box3_title">
-                            <h6>Flower beauty</h6>
-                        </div>
-                        <div class="info_box3_desc">
-                            <p>
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="expert_info">
-            <div class="expert_info_container">
-                <div class="expert_info_box expert_info_box1 expert_info_active">
-                    <div class="expert_info_box1_image">
-                        <img src="../IMG/h3-team-img-4.png" alt="" width="50">
-                    </div>
-                    <div class="expert_info_box1_desc">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam deleniti neque?
-                        </p>
-                    </div>
-                    <div class="expert_info_box1_name">
-                        <p>Amanda Watkins</p>
-                        <p>Florist</p>
-                    </div>
-                </div>
-                <div class="expert_info_box expert_info_box2">
-                    <div class="expert_info_box2_image">
-                        <img src="../IMG/h3-team-img-3.png" alt="" width="50">
-                    </div>
-                    <div class="expert_info_box2_desc">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum obcaecati ratione.
-                        </p>
-                    </div>
-                    <div class="expert_info_box2_name">
-                        <p>Beverly Clark</p>
-                        <p>Florist</p>
-                    </div>
-                </div>
-
-                <div class="expert_info_left">
-                    <span class="previous">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                </div>
-                <div class="expert_info_right">
-                    <span class="next">
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
                 </div>
             </div>
         </section>
